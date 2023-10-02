@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class DadiComponent {
   dado1:number=5;
   dado2:number=5;
-  pathDado1:string="assets/img";
-  pathDado2:string="assets/img";
+  pathDado1:string="assets/img/";
+  pathDado2:string="assets/img/";
   pari:boolean=false;
   constructor(){
     this.dado1 = Math.floor(Math.random()*6)+1;
