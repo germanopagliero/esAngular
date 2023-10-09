@@ -6,11 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventi.component.css']
 })
 export class EventiComponent {
-
-
-
-btnClick(){
-  window.alert('Salve Mondo')
-}
-
+  //N.B. mettere in app.module.ts FormsModule e name nei controlli
+  //[(ngModel)] bidirezionale
+  //[value] unidirezionale come {{ }}
+    nome:string = "";
+    textChanged:string = "";
+  
+  ngOnInit(): void {
+    this.nome="Inserito da ngOnInit";
+  }
+  btnClick(){
+    window.alert('Salve Mondo')
+  }
+  txtNomeTextChanged() {
+    this.textChanged=this.nome;
+  }
 }
