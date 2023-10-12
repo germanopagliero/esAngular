@@ -9,4 +9,11 @@
     <input type="text" name="txtTextChanged" [value]="textChanged">
     <br>
     <br>
+    <span>Scorri il mouse sulle immagini</span>
+    <img [src]="pathImg1" (mouseover)="onMouseOver('immagine1',pathImg1)" (mouseout)="onMouseOut()" width="50" height="60">
+    <img [src]="pathImg2" (mouseover)="onMouseOver('immagine2',pathImg2)" (mouseout)="onMouseOut()" width="50" height="60">
+    <img [src]="pathImg3" (mouseover)="onMouseOver('immagine3',pathImg3)" (mouseout)="onMouseOut()" width="50" height="60">
+    <span>Sei su: {{ nomeImmagine }}</span>
+    <br>
+    <img [src]="pathImg" width="150" height="170">
 </form>
