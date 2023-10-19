@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { DadiComponent } from './dadi/dadi.component';
@@ -28,7 +29,8 @@ import { UsoServiceComponent } from './uso-service/uso-service.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
