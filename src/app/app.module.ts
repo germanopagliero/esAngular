@@ -13,6 +13,7 @@ import { EventiOutputItemComponent } from './eventi-output/eventi-output-item/ev
 import { EventiInputComponent } from './eventi-input/eventi-input.component';
 import { EventiInputChildComponent } from './eventi-input/eventi-input-child/eventi-input-child.component';
 import { UsoServiceComponent } from './uso-service/uso-service.component';
+import { LibriConServizioComponent } from './libri-con-servizio/libri-con-servizio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UsoServiceComponent } from './uso-service/uso-service.component';
     EventiOutputItemComponent,
     EventiInputComponent,
     EventiInputChildComponent,
-    UsoServiceComponent
+    UsoServiceComponent,
+    LibriConServizioComponent
   ],
   imports: [
     BrowserModule,
