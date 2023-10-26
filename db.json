@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 1,
-      "author": "Hans Christian Andersen",
+      "author": "Hans Christian AndersenMODIFICATO",
       "country": "Denmark",
       "pages": 784,
       "title": "Fairy tales",
@@ -63,6 +63,14 @@
       "pages": 194,
       "title": "Stories",
       "year": 1886
+    },
+    {
+      "id": 9,
+      "author": "Germano",
+      "country": "Italy",
+      "pages": 777,
+      "title": "myAngular",
+      "year": 2021
     }
   ]
 }

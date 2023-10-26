@@ -7,17 +7,14 @@
         <td>Title</td>
         <td>Year</td>
     </thead>
-    <tr *ngFor="let libro of libri"
-        [ngStyle] = "{'backgroundColor': libro.country == 'Italy' ? 'cyan' : 'white'}"
-        [ngClass] = "{'min1800' : libro.year<1800}"
-    >
+    <tr *ngFor="let libro of libriService.libri">
         <td><button (click)="btnClick(libro.id)">{{ libro.id }}</button></td>
         <td>{{ libro.author }}</td>
         <td>{{ libro.country }}</td>
         <td>{{ libro.pages }}</td>
         <td>{{ libro.title }}</td>
         <td>{{ libro.year }}</td>
-        <td><button (click)="btnModificaClick(libro.id)">Modifica</button></td>
+        <td><button (click)="btnModificaClick(libro)">Modifica</button></td>
         <td><button (click)="btnCancellaClick(libro.id)">Cancella</button></td>
     </tr>
 </table>
