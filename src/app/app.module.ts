@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DadiComponent } from './dadi/dadi.component';
@@ -32,7 +33,9 @@ import { LibriConServizioComponent } from './libri-con-servizio/libri-con-serviz
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
