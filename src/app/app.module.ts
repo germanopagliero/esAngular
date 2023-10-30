@@ -15,6 +15,10 @@ import { EventiInputComponent } from './eventi-input/eventi-input.component';
 import { EventiInputChildComponent } from './eventi-input/eventi-input-child/eventi-input-child.component';
 import { UsoServiceComponent } from './uso-service/uso-service.component';
 import { LibriConServizioComponent } from './libri-con-servizio/libri-con-servizio.component';
+import { RoutingHomeComponent } from './routing-home/routing-home.component';
+import { RoutingPageNotFoundComponent } from './routing-page-not-found/routing-page-not-found.component';
+import { RoutingUserComponent } from './routing-user/routing-user.component';
+import { RoutingUserChildComponent } from './routing-user/routing-user-child/routing-user-child.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { LibriConServizioComponent } from './libri-con-servizio/libri-con-serviz
     EventiInputComponent,
     EventiInputChildComponent,
     UsoServiceComponent,
-    LibriConServizioComponent
+    LibriConServizioComponent,
+    RoutingHomeComponent,
+    RoutingPageNotFoundComponent,
+    RoutingUserComponent,
+    RoutingUserChildComponent
   ],
   imports: [
     BrowserModule,
